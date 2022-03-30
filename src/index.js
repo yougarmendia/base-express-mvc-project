@@ -9,15 +9,8 @@ const PORT = process.env.PORT || 3000
 app.set('views', path.join(__dirname, 'views')) // Indicamos que nuestra sección VISTA será el directorio Vista del directorio en el que estoy trabajando
 app.set('view engine', 'hbs') // Acá indico que mi view engine sea hbs ¿o sea lo que se transformará a HTML?
 app.use(morgan('dev'))
-app.use(router)
 
-app.get('/', (req, res) => {
-  res.render('home')
-})
-
-app.get('/about', (req, res) => {
-  res.render('about')
-})
+app.use(router) // Puse en la posición final para que buscara AL FINAL de las búsqueda en estas rutas
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)
