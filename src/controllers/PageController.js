@@ -3,6 +3,10 @@ class PageController {
     res.render('home')
   }
 
+  renderAbout (req, res) {
+    res.render('about')
+  }
+
   renderNotFound (req, res) {
     res.render('404')
   }
