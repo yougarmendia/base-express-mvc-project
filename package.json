@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
+    "handlebars": "^4.7.7",
     "hbs": "^4.2.0",
     "morgan": "^1.10.0"
   },
@@ -25,5 +26,13 @@
     "eslint-plugin-promise": "^6.0.0",
     "nodemon": "^2.0.15"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yougarmendia/primer-hola-mundo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yougarmendia/primer-hola-mundo/issues"
+  },
+  "homepage": "https://github.com/yougarmendia/primer-hola-mundo#readme"
 }
